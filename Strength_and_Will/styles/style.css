@@ -1,0 +1,897 @@
+/* Адаптив для ноутбуков с шириной экрана от 1024px до 1440px */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+        padding-right: 400px;
+    }
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .main-img {
+        height: 100px;
+        width: 100px;
+        padding-right: 250px;
+    }
+    
+    .main-img2 {
+        height: 150px;
+        width: 150px;
+        padding-right: 300px;
+    }
+
+    .main-img3 {
+        height: 150px;
+        width: 150px;
+        padding-right: 500px;
+    }
+    .directors-section {
+        transform: translateX(-150px); 
+    }
+    .foto-stocks img {
+        max-width: 430px;
+        max-height: 300px; /* Уменьшаем размер изображений для ноутбуков */
+    }
+
+    .coaches {
+      margin-left: -50px;
+      margin-right: 20px;
+    }
+
+    .coach-item {
+        max-width: 200px; 
+    }
+
+    .p1 {
+       padding-left: 60px;
+       text-align: center;
+    }
+    .coach-item h1{
+       margin-left: 50px; 
+
+    }
+    .info-coach-item{
+        margin-left: 50px;
+    }
+    
+    .info-karta {
+        width: 220px;
+        height: 220px;
+        right: 300px;
+    }
+
+    .card {
+        width: 350px;
+        height: 180px;
+        padding: 15px;
+    }
+
+    .carousel {
+        height: 70vh;
+    }
+
+    .carousel-item {
+        min-width: 90%;
+    }
+
+    .container-info h1 {
+        font-size: 40px;
+    }
+
+    .info-stocks h1 {
+        font-size: 40px;
+    }
+
+    .info-address h1 {
+        font-size: 40px;
+    }
+
+    .coaching_staff img {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .container-aerobic-classes {
+        width: 100%;
+        display: flex;
+        font-size: 18px;
+    }
+    .info-aerobic-classes {
+        padding-right: 200px;
+        flex: 1; 
+        padding-right: 20px;
+    }
+ 
+    
+    .container-aerobic-classes img {
+        width: 100%;
+        padding-right: 200px;
+        flex: 1;
+    }
+
+    .container-aerobic-classes br {
+        display: none;
+    }
+
+    .container-aerobic-classes h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-aerobic-classes h5 {
+        margin-top: 10px;
+    }
+
+    .container-power-classes {
+        display: flex;
+        font-size: 18px;
+    }
+    .info-power-classes {
+ 
+        padding-right: 100px;
+    }
+ 
+    
+    .container-power-classes img {
+        flex: 1; 
+        padding-right: -300px;
+        width: 100%;
+    }
+
+    .container-power-classes br {
+        display: none;
+    }
+
+    .container-power-classes h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-power-classes h5 {
+        margin-top: 10px;
+    }
+
+    .container-special-classes {
+        width: 100%;
+        display: flex;
+        font-size: 18px;
+    }
+    .info-special-classes {
+        padding-right: 200px;
+        flex: 1; 
+        padding-right: 20px;
+    }
+    
+    .container-special-classes  {
+        font-size: 18px;
+    }
+    
+    .container-special-classes img {
+        width: 800px;
+        height: 900px;
+        padding-right: 200px;
+        flex: 1;
+    }
+
+    .container-special-classes br {
+        display: none;
+    }
+
+    .container-special-classes h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-special-classes h5 {
+        margin-top: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    background-color: black;
+    font-family: 'Steppe-Book', sans-serif;
+    color: white;
+}
+
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #FF6F00;
+    border-radius: 60px;
+    width: 200x;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #000000;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo img{ 
+    vertical-align: bottom;
+    margin-left: 50px;
+}
+
+.menu {
+    margin-left: 250px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item a {
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid  white;
+}
+
+.main-content {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    margin-left: 100px;
+}
+
+.main-info {
+    max-width: 500px;
+}
+
+.main-title {
+    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.main-img {
+    position: absolute;
+   width: 300px;
+   height: 300px;
+   margin-left: 750px;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img2 {
+    position: absolute;
+   width: 300px;
+   height: 300px;
+   padding-left: 1400px;
+}
+
+.main-img3 {
+    position: absolute;
+   width: 300px;
+   height: 300px;
+   padding-left: 2200px;
+}
+
+.modal-content {
+    border-color: #FF6F00;
+    border-radius: 20px;
+}
+
+.input-radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.label1 {
+    margin-right: 70px;
+}
+
+.label2 {
+    margin-right: -12px;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #007bff; /* Цвет активного состояния (например, голубой) */
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #007bff; /* Цвет заливки для выбранного состояния */
+    border: 2px solid #007bff;
+  }
+  
+.modal-content h1 {
+    text-align: center;
+}
+
+form {
+    padding-top: 10px;
+    text-align: center;
+}
+
+input.button {
+    color: white;
+    background-color: #FF6F00;
+    height: 50px;
+    margin-top: 10px;
+    
+}
+input {
+    border-radius: 30px;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.karta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-karta {
+   width: 250px;
+   height: 250px;
+   border-style: solid;
+   background-color: #FF6F00;
+   position: absolute;
+   right: 400px;
+   padding-left: 20px;
+   padding-top: 20px ;
+   border-radius: 30px;
+   border-color: black;
+   font-family: s;
+}
+
+.info-karta h1 {
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.info-karta-telephone {
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.info-karta-address {
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100vw; /* Растягиваем карусель на всю ширину экрана */
+    height: 80vh; /* Карусель на всю высоту экрана */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ширина контейнера */
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%; /* Каждый слайд занимает 100% ширины карусели */
+    height: 100%; /* Каждый слайд растянут по высоте */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение адаптируется по размеру блока */
+    display: block;
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-right: 300px;
+
+}
+
+.card {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #FF6F00; 
+    padding: 20px; 
+    margin: 20px;
+    border-radius: 30px;
+    background-color: black;
+    position: relative;
+}
+
+.card-info {
+    padding-top: 20px;
+    font-size: 14px;
+}
+.card-domain {
+    margin-left: 250px;
+    padding-bottom: 100px;
+    position: absolute;
+}
+
+.card-logo {
+    margin-right: 250px;
+    margin-bottom: 15x;
+    padding-top: 10px;
+    height: 200px;
+    width: 150px;
+}
+
+.card-initials {
+    position: absolute;
+    padding-top: 180px;
+    margin-left: 225px;
+}
+.main-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-head {
+    font-size: 40px;
+}
+
+.text-logo {
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    margin-right: 20px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    
+}
+
+.main-card-button {
+    background-color: #FF6F00;
+    border-radius: 60px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.directors-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+
+.foto-direktors img {
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+}
+
+.description-gym {
+    margin-top: 50px;
+    margin-left: 400px;
+    font-size: 20px;
+}
+
+.description-gym p {
+    padding-top: 20px;
+}
+
+.words-directors {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 30px;
+}
+
+.words-directors h3 {
+    color: #FF6F00;
+}
+
+.description-gym p {
+    line-height: 1.5;
+}
+
+hr {
+    background-color: #FF6F00;
+    padding-top: 1px;
+    border-color: #FF6F00;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-list ul {
+    list-style-type: none;
+}
+
+.footer-list li {
+    padding-top: 10px
+}
+
+.footer-logo img{
+    padding: 30px 50px;
+}
+
+.footer-info p {
+    padding-top: 20px;
+}
+
+.footer-rights {
+    margin-top: auto;
+   padding-right: 30px;
+}
+
+.footer-contacts img {
+    padding-top: 10px;
+    padding: 5px;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.container-info1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+.container-info h1 {
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+.container-about_us h1 {
+    text-align: center;
+}
+
+.container-info2 {
+    display: flex;
+    flex-direction: column;
+   padding-right: 200px;
+}
+
+.container-info3 {
+    padding-right: 100px;
+}
+
+.container-info3 p {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.container-stocks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.foto-stocks img {
+    width: 615px;
+    height: 400px;
+    padding-left: 10px;
+}
+
+.info-stocks {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.info-stocks p {
+    font-size: 30px;
+    color: #FF6F00;
+}
+
+.info-stocks h1 {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.info-address {
+    text-align: center;
+}
+
+.info-address p {
+    font-size: 30px;
+    color: #FF6F00;
+    padding-top: 50px;
+}
+
+.info-address h1{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+.container-karta {
+    padding-top: 10px;
+}
+
+.coaching_staff img {
+    width: 1500px;
+    height: 800px;
+}
+
+.coaching_staff h1 {
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    font-size: 50px;
+}
+
+.coaching_staff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-coach {
+    padding-top: 60px;
+}
+
+.container-coach h1 {
+    text-align: center;
+}
+
+.head-coach img{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.head-coach  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-staff h1 {
+    text-align: center;
+}
+
+.coaches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coach-item {
+    display: flex;
+    flex-direction: column;
+    margin: 34px;
+}
+
+.coach-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 34px;
+}
+
+.coach-item h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info-coach {
+    margin-top: 30px;
+
+}
+
+.info-coach p {
+    padding-top: 30px;
+    padding-left: 100px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.info-coach-item p{
+    text-align: center;
+}
+
+
+.container-button-coach {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button-coach {
+    background-color: #FF6F00;
+    border-radius: 60px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.container-button-classes {
+    text-align: center ;
+    margin-top: 30px;
+}
+
+.button-classes {
+    background-color: #FF6F00;
+    border-radius: 60px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    width: 300px;
+    height: 50px;
+
+}
+
+.container-aerobic-classes {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container-aerobic-classes img {
+    height: 600px;
+    width: 500px;
+    padding-left: 200px;
+}
+
+.info-aerobic-classes {
+    padding-left: 200px;
+}
+
+.info-aerobic-classes p{
+    padding-top: 10px;
+}
+
+.info-aerobic-classes h5 {
+    color: #FF6F00;
+}
+
+.container-power-classes {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container-power-classes img {
+    height: 600px;
+    width: 500px;
+    padding-left: 200px;
+}
+
+.info-power-classes {
+    padding-left: 350px;
+}
+
+.info-power-classes h5 {
+    color: #FF6F00;
+}
+
+.container-special-classes {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container-special-classes img {
+    height: 600px;
+    width: 500px;
+    padding-left: 250px;
+}
+
+.img {
+    height: 600px;
+    width: 500px;
+    display: none;
+
+}
+
+.info-special-classes {
+    padding-left: 200px;
+}
+
+.info-special-classes h5{
+    color: #FF6F00;
+}
